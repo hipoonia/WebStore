@@ -9,9 +9,13 @@ package com.packt.webstore.config;
  import org.springframework.web.servlet.view.InternalResourceViewResolver;
  import org.springframework.web.servlet.view.JstlView;
  
- @Configuration
- @EnableWebMvc
- @ComponentScan("com.packt.webstore")
+ @Configuration     //This indicates that a class declares one or more @Bean methods
+ 
+ @EnableWebMvc		// Adding this annotation to an @Configuration class imports some special Spring MVC configuration
+ // also, needed to enable annotations such as @controller and @RequestMapping
+ 
+ @ComponentScan("com.packt.webstore")    // This specifies the base packages to scan for annotated components (beans)
+ 
  public class WebApplicationContextConfig extends WebMvcConfigurerAdapter {
  @Override
 	 public void configureDefaultServletHandling (DefaultServletHandlerConfigurer configurer) {
@@ -19,11 +23,14 @@ package com.packt.webstore.config;
 	 }
 		 @Bean
 		 public InternalResourceViewResolver getInternalResourceViewResolver() {
-			 InternalResourceViewResolver resolver = new
-			 InternalResourceViewResolver();
+			 
+			 InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+			 
 			 resolver.setViewClass(JstlView.class);
-			 resolver.setPrefix("/WEB-INF/jsp/");
+			 
+			 resolver.setPrefix("/WEB-INF/views/");
 			 resolver.setSuffix(".jsp");
+			 
 			 return resolver;
 		 }
  }
