@@ -5,8 +5,9 @@ package com.packt.webstore.controller;
  
  
  @Controller
+ @RequestMapping("/")
  public class HomeController {
-	 @RequestMapping("/welcome")
+	 @RequestMapping
 	 public String welcome(Model model) {
 			 
 		 model.addAttribute("greeting", "Welcome to Web Store!");
