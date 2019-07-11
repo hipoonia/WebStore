@@ -1,0 +1,10 @@
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/config/WebApplicationContextConfig.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/controller/HomeController.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/domain/repository/ProductRepository.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/domain/repository/imlp/InMemoryProductRepository.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/controller/ProductController.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/config/DispatcherServletInitializer.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/service/impl/ProductServiceImpl.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/config/RootApplicationContextConfig.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/domain/Product.java
+/home/ppoonia/Documents/STS_WS/webstore/src/main/java/com/packt/webstore/service/ProductService.java

@@ -14,4 +14,11 @@ package com.packt.webstore.controller;
 		 model.addAttribute("tagline", "The one and only amazing web store");
 		 return "welcome";
 	 }
+	 
+	 @RequestMapping("/welcome/greeting")
+	 public String greeting() {
+		 return "welcome";
+	 }
+	 
+	 
  }

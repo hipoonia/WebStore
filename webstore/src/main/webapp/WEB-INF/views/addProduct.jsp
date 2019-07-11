@@ -2,6 +2,8 @@
  
  <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
  
+ <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+ 
  
  <html>
  <head>
@@ -22,16 +24,15 @@
 			 </div>
 		 </section>
 	 <section class="container">
-	 		<form:form method="POST" modelAttribute="newProduct" class="form-horizontal">
-	 		<fieldset>
-			 <legend>Add new product</legend>
-				 <div class="form-group">
-				 <label class="control-label col-lg-2 col-lg-2"
-				 for="productId">Product Id</label>
-		 		<div class="col-lg-10">
-		 		<form:input id="productId" path="productId" type="text" class="form:input-large"/> 
-		 		</div>
-	 </div>
+	 		<form:form method="POST" modelAttribute="newProduct" class="form-horizontal" enctype="multipart/form-data">
+	 			<fieldset>
+			 		<legend>Add new product</legend>
+				 	<div class="form-group">
+					 	<label class="control-label col-lg-2 col-lg-2" for="productId">Product Id</label>
+				 		<div class="col-lg-10">
+				 			<form:input id="productId" path="productId" type="text" class="form:input-large"/> 
+				 		</div>
+	 			</div>
 	 
 	
 	 
@@ -92,16 +93,28 @@
 	 value="Refurbished" />Refurbished
 	 </div>
 	 </div>
+	 
+	 <div class="form-group">
+			 <label class="control-label col-lg-2" for="productImage">Product Image File</label>
+			
+			 <div class="col-lg-10">
+			 <form:input id="productImage" path="productImage"
+	 		type="file" class="form:input-large" />
+	 		
+		 </div>
+		 </div>
+	 
+	 
 	 <div class="form-group">
 	 <div class="col-lg-offset-2 col-lg-10">
 	 <input type="submit" id="btnAdd" class="btn
 	 btn-primary" value ="Add"/>
 	 </div>
 	 </div>
+	 
 	 </fieldset>
 	 </form:form>
 	 </section>
  </body>
  </html>
- 
  
