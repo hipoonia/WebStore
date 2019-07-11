@@ -2,9 +2,23 @@ package com.packt.webstore.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+//import javax.xml.
+
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+ import org.springframework.web.servlet.view.JstlView;
+import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
+import org.springframework.web.servlet.view.xml.MarshallingView;
+import org.springframework.web.util.UrlPathHelper;
+
+@XmlRootElement
 public class Product implements Serializable {
 	 
 	private static final long serialVersionUID = 3678107792576131001L;
@@ -20,8 +34,10 @@ public class Product implements Serializable {
 	 private boolean discontinued;
 	 private String condition;
 	 
+	 @JsonIgnore
 	 private MultipartFile productImage;     //ch5. Multipart request to add images
 	 
+	 @XmlTransient
 	 public MultipartFile getProductImage() {
 		return productImage;
 	}
