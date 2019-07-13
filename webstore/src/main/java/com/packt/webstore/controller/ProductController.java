@@ -135,7 +135,8 @@ public class ProductController {
 				 "category",
 				 "unitsInStock",
 				 "condition",
-				"productImage");
+				"productImage",
+			   "language");
 		
 	}
 	
@@ -150,6 +151,11 @@ public class ProductController {
 		mav.setViewName("productNotFound");
 		
 		return mav;
+	 }
+	
+	@RequestMapping("/products/invalidPromoCode")
+	 public String invalidPromoCode() {
+		return "invalidPromoCode";
 	 }
 			
 	

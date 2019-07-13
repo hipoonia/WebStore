@@ -15,6 +15,13 @@
  <title>Products</title>
  </head>
 	 <body>
+	 
+	 <section>
+	 <div class="pull-right" style="padding-right:50px">
+	 <a href="?language=en" >English</a>|<a href="?language=nl" >Dutch</a> 
+	 </div>
+	 </section>
+	 
 		 <section>
 			 <div class="jumbotron">
 				 <div class="container">
