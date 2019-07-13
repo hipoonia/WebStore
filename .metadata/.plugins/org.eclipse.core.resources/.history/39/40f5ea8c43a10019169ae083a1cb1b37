@@ -1,0 +1,8 @@
+package com.packt.webstore.controller;
+
+import java.math.BigDecimal;
+import org.springframework.stereotype.Controller;
+
+public class ProductController {
+
+}

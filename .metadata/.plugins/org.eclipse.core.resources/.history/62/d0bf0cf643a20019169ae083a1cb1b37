@@ -1,0 +1,11 @@
+package com.packt.webstore.service;
+
+import java.awt.List;
+
+public interface ProductService {
+	
+	void updateAllStock();
+	
+	List<Product> getAllProducts();
+	
+}

@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:05:47 +0530] "GET /webstore/market/products HTTP/1.1" 200 2371
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:05:47 +0530] "GET /webstore/img/P1235.jpg HTTP/1.1" 200 25113
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:05:47 +0530] "GET /webstore/img/P1234.jpg HTTP/1.1" 200 95171
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:05:47 +0530] "GET /webstore/img/P1236.jpg HTTP/1.1" 200 22757
+127.0.0.1 - - [12/Jul/2019:17:06:02 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:06:02 +0530] "GET /webstore/market/products HTTP/1.1" 200 2371
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:06:10 +0530] "GET /webstore/market/product?id=P1234 HTTP/1.1" 200 1396
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:06:19 +0530] "GET /webstore/market/product?id=P1235 HTTP/1.1" 200 1387
+127.0.0.1 - - [12/Jul/2019:17:07:09 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:07:09 +0530] "GET /webstore/market/product?id=P1235 HTTP/1.1" 200 1387
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:07:16 +0530] "GET /webstore/market/products HTTP/1.1" 200 2371
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:07:22 +0530] "GET /webstore/market/product?id=P1235 HTTP/1.1" 200 1387
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:07:25 +0530] "GET /webstore/market/products HTTP/1.1" 200 2371
+0:0:0:0:0:0:0:1 - - [12/Jul/2019:17:07:31 +0530] "GET /webstore/market/product?id=P1236 HTTP/1.1" 200 1404

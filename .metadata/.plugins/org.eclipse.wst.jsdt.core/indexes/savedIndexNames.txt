@@ -1,0 +1,12 @@
+INDEX VERSION 1.4+/home/ppoonia/Documents/STS_WS/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3803777366.index
+2621831233.index
+75856817.index
+3088294700.index
+29058697.index
+1883823754.index
+1932851156.index
+1264850351.index
+1105768217.index
+1932851156.index
+450459542.index

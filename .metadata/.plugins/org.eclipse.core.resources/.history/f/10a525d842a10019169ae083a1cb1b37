@@ -1,0 +1,33 @@
+package com.packt.webstore.domain;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+
+public class Product implements Serializable {
+	 
+	private static final long serialVersionUID = 3678107792576131001L;
+	 
+	 private String productId;
+	 private String name;
+	 private BigDecimal unitPrice;
+	 private String description;
+	 private String manufacturer;
+	 private String category;
+	 private long unitsInStock;
+	 private long unitsInOrder;
+	 private boolean discontinued;
+	 private String condition;
+	 
+	 public Product() {
+		 super();
+	 }
+	 
+	 public Product(String productId, String name, BigDecimal unitPrice) {
+		 this.productId = productId;
+		 this.name = name;
+		 this.unitPrice = unitPrice;
+	 }
+
+}
+	 
+	
